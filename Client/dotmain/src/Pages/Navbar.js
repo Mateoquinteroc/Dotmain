@@ -1,24 +1,24 @@
 import React from 'react'
-import '../styles/NavBar.css'
+import '../styles/NavBar.scss'
 
-const Navbar = () => {
+const Navbar = ({onClick}) => {
   return (
     <div>
         <nav className="NavBar">
             <div className="NavBar_Left">
                 <li>
-                    <a href='/'>Dot Main</a>
+                    <a onClick={()=>onClick('dot')}>Dot Main</a>
                 </li>
             </div>
             <div className="NavBar_Right">
                 <li>
-                    <a href='/about'>About</a>
+                    <a onClick={()=>onClick('about')}>About</a>
                 </li>
                 <li>
-                    <a href='/'>Project</a>
+                    <a onClick={()=>onClick('project')}>Project</a>
                 </li>
                 <li>
-                    <a href='/'>Contact</a>
+                    <a onClick={()=>onClick('contact')}>Contact</a>
                 </li>
             </div>
         </nav>

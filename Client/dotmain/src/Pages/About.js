@@ -1,10 +1,10 @@
-import React from 'react';
-import '../styles/About.css';
+import React , {forwardRef}from 'react';
+import '../styles/About.scss';
 
-const About = () => {
+const About = forwardRef ((_,ref) => {
   return (
-    <div className="naranja">About</div>
+    <div className="naranja" ref={ref}>About</div>
   )
-}
+})
 
 export default About;

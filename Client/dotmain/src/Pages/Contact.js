@@ -1,10 +1,10 @@
-import React from 'react';
-import '../styles/Contact.css';
+import React, {forwardRef} from 'react';
+import '../styles/Contact.scss';
 
-const Contact = () => {
+const Contact = forwardRef((_,ref) => {
   return (
-    <div className="gris">Contact</div>
+    <div className="gris" ref={ref}>Contact</div>
   )
-}
+})
 
 export default Contact;

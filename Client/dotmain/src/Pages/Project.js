@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react';
+import '../styles/Project.scss';
 
-const Project = () => {
+const Project = forwardRef((_,ref) => {
   return (
-    <div>Project</div>
+    <div className="cuerpo" ref={ref}>Project</div>
   )
-}
+})
 
 export default Project;
