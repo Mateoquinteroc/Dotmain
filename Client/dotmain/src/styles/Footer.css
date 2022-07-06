@@ -1,0 +1,6 @@
+.pies {
+    background-color:var(--dark-grey);
+    color: var(--light-grey);
+    width: 100%;
+    height: 100px;
+}

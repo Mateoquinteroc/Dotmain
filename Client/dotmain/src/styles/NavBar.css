@@ -1,6 +1,12 @@
+@font-face {
+    font-family: helvetica;
+    src: url(../assets/Helvetica.ttf);
+}
+
 .NavBar {
+    font-family: helvetica;
+    font-size: var(--md);
     position: relative;
-    font-size: 80%;
     padding: 0.75rem;
     color: black;
     border: 1px solid black; 
