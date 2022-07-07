@@ -11,34 +11,37 @@ import Project from "./Pages/Project";
 // import Layout from './Pages/Layout';
 
 const App = () => {
+  const homeRef = useRef ();
   const contactRef = useRef();
   const aboutRef = useRef();
   const projectRef = useRef ();
 
   const handleNavbarClick = (item) => {
     let refToUse;
-
     switch (item) {
+      case "home":
+        refToUse = homeRef;
+        break;
       case "about":
         refToUse = aboutRef;
         break;
       case "project":
-        refToUse = projectRef;
+          refToUse = projectRef;
         break;  
       case "contact":
         refToUse = contactRef;
         break;
-    }
-
-    if (refToUse) {
-      refToUse.current.scrollIntoView({ behavior: "smooth" });
-    }
+      }
+            
+      if (refToUse) {
+        refToUse.current.scrollIntoView({ behavior: "smooth" });
+      }
   };
 
   return (
-    <div>
+    <div className="general">
       <Navbar onClick={handleNavbarClick} />
-      <Home />
+      <Home  ref={homeRef}/>
       <About ref={aboutRef} />
       <Project ref={projectRef}/>
       <Contact ref={contactRef} />

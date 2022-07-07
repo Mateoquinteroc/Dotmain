@@ -3,11 +3,11 @@ import '../styles/NavBar.scss'
 
 const Navbar = ({onClick}) => {
   return (
-    <div>
+    <div className="NavGeneral">
         <nav className="NavBar">
             <div className="NavBar_Left">
                 <li>
-                    <a onClick={()=>onClick('dot')}>Dot Main</a>
+                    <a onClick={()=>onClick('home')}>Dot Main</a>
                 </li>
             </div>
             <div className="NavBar_Right">

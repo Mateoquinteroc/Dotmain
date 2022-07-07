@@ -3,7 +3,17 @@
     font-family: helvetica;
     src: url(../assets/Helvetica.ttf);
 }
-
+.NavGeneral {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    z-index: 1000;
+    // margin-left: 10%;
+    overflow-x:hidden;
+}
 .NavBar {
     font-family: helvetica;
     font-size: var(--md);
